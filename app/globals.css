@@ -39,19 +39,20 @@ html {
   overflow-x: hidden;
 }
 
-/* Smoother animations on mobile */
+/* Disable scroll animations on mobile to prevent double-loading */
 @media (max-width: 768px) {
   * {
-    animation-duration: 0.35s !important;
-    transition-duration: 0.2s !important;
+    animation: none !important;
   }
   
-  /* Optimize for smoother rendering */
+  /* Keep smooth transitions for interactions only */
+  a, button, input, select, textarea {
+    transition: all 0.2s ease !important;
+  }
+  
+  /* Force immediate visibility for all elements */
   * {
-    -webkit-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    opacity: 1 !important;
   }
 }
 
