@@ -70,8 +70,8 @@ export const About = () => {
           transition={{ duration: 0.6 }}
         >
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37] to-[#B8941F] rounded-2xl blur-3xl opacity-20"></div>
-            <Card glass className="relative">
+            <div className="absolute inset-0 bg-gradient-to-br from-[#D4AF37] to-[#B8941F] rounded-2xl blur-3xl opacity-20 md:opacity-20"></div>
+            <Card glass className="relative bg-[#8B7520]/40 md:bg-transparent">
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="w-12 h-12 bg-gradient-to-br from-[#D4AF37] to-[#B8941F] rounded-lg flex items-center justify-center flex-shrink-0">
@@ -79,7 +79,7 @@ export const About = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">Safety First</h3>
-                    <p className="text-gray-400">
+                    <p className="text-white md:text-gray-400">
                       Fully licensed, insured, and experienced driver. Your safety and comfort 
                       are my top priorities on every journey.
                     </p>
@@ -92,7 +92,7 @@ export const About = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">Reliable Service</h3>
-                    <p className="text-gray-400">
+                    <p className="text-white md:text-gray-400">
                       Well-maintained vehicle, regularly serviced to ensure a comfortable and 
                       dependable journey every time.
                     </p>
@@ -105,7 +105,7 @@ export const About = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-white mb-2">Professional Service</h3>
-                    <p className="text-gray-400">
+                    <p className="text-white md:text-gray-400">
                       Years of experience providing punctual, courteous service. I'm dedicated to 
                       making every journey smooth and stress-free.
                     </p>

@@ -96,9 +96,9 @@ export const Navbar = () => {
         </div>
 
         {mobileMenuOpen && (
-          <div className="lg:hidden fixed inset-0 top-0 left-0 right-0 bottom-0 bg-gradient-to-br from-[#8B7520] to-[#6B5A15] z-[100] flex items-center justify-center">
+          <div className="lg:hidden fixed inset-0 top-0 left-0 right-0 bottom-0 bg-gradient-to-br from-[#D4AF37] to-[#B8941F] z-[100] flex items-center justify-center">
             <button
-              className="absolute top-6 right-6 text-white hover:text-[#D4AF37] transition-colors z-[101]"
+              className="absolute top-6 right-6 text-black hover:text-white transition-colors z-[101]"
               onClick={() => setMobileMenuOpen(false)}
             >
               <X className="w-8 h-8" />
@@ -109,7 +109,7 @@ export const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-white hover:text-[#D4AF37] transition-colors duration-300 font-bold text-3xl"
+                  className="text-black hover:text-white transition-colors duration-300 font-bold text-3xl"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   {link.name}
@@ -117,7 +117,7 @@ export const Navbar = () => {
               ))}
               <a 
                 href="tel:+447624354427" 
-                className="flex items-center text-white hover:text-[#D4AF37] transition-colors text-2xl font-semibold"
+                className="flex items-center text-black hover:text-white transition-colors text-2xl font-semibold"
               >
                 <Phone className="w-6 h-6 mr-3" />
                 <span>+44 7624 354427</span>
