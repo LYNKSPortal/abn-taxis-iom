@@ -38,7 +38,7 @@ export const Hero = () => {
               transition={{ delay: 0.2 }}
             >
               <Star className="w-4 h-4 text-[#D4AF37]" fill="#D4AF37" />
-              <span className="text-sm text-[#D4AF37] font-medium">Professional Airport Transfer Service</span>
+              <span className="text-sm text-[#D4AF37] font-medium">Based in Douglas, Isle of Man</span>
             </motion.div>
 
             <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
@@ -48,7 +48,7 @@ export const Hero = () => {
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Professional airport transfer and driver service across the Isle of Man. 
+              Professional airport transfer and driver service based in Douglas, Isle of Man. 
               Comfortable, punctual, and reliable transportation you can count on.
             </p>
 
