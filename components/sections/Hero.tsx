@@ -42,19 +42,19 @@ export const Hero = () => {
             </motion.div>
 
             <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-white">Reliable Airport Transfers</span>
+              <span className="text-white">Your Trusted Taxi Service</span>
               <br />
               <span className="text-gradient-gold">Across the Isle of Man</span>
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Professional airport transfer and driver service based in Douglas, Isle of Man. 
-              Comfortable, punctual, and reliable transportation you can count on.
+              Based in Douglas, ABN Taxis covers the whole island — from airport transfers and town runs
+              to business travel, nights out, and everything in between. Reliable, professional, and available 24/7.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center">
               <Button href="#contact" variant="primary" size="lg">
-                Book Your Transfer
+                Book a Taxi
                 <ArrowRight className="ml-2 w-5 h-5" />
               </Button>
             </div>
