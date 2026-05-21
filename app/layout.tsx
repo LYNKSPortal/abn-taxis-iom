@@ -20,6 +20,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "ABN Taxi Service | Premium Chauffeur Service",
     description: "Experience luxury travel with Isle of Man's premier chauffeur service",
+    url: "https://www.abntaxis.com",
     type: "website",
   },
 };

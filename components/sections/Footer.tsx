@@ -70,8 +70,8 @@ export const Footer = () => {
               </li>
               <li className="flex items-start space-x-3">
                 <Mail className="w-5 h-5 text-[#D4AF37] flex-shrink-0 mt-0.5" />
-                <a href="mailto:bookings@eat.co.im" className="text-gray-400 hover:text-[#D4AF37] transition-colors">
-                  bookings@eat.co.im
+                <a href="mailto:bookings@abntaxis.com" className="text-gray-400 hover:text-[#D4AF37] transition-colors">
+                  bookings@abntaxis.com
                 </a>
               </li>
               <li className="flex items-start space-x-3">

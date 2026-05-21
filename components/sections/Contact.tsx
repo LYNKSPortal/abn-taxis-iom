@@ -42,8 +42,8 @@ export const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      content: 'bookings@eat.co.im',
-      link: 'mailto:bookings@eat.co.im',
+      content: 'bookings@abntaxis.com',
+      link: 'mailto:bookings@abntaxis.com',
     },
     {
       icon: MapPin,
