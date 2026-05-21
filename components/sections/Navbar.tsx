@@ -60,8 +60,8 @@ export const Navbar = () => {
             whileHover={{ scale: 1.05 }}
           >
             <div className="text-xl md:text-2xl font-bold">
-              <span className="text-gradient-gold">ABN TAXI SERVICE</span>
-              <span className="text-white ml-2">LIMITED</span>
+              <span className="text-gradient-gold">ABN</span>
+              <span className="text-white ml-2">Taxis</span>
             </div>
           </motion.div>
 
