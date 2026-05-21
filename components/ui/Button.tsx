@@ -9,6 +9,7 @@ interface ButtonProps {
   onClick?: () => void;
   href?: string;
   type?: 'button' | 'submit' | 'reset';
+  disabled?: boolean;
 }
 
 export const Button: React.FC<ButtonProps> = ({
@@ -19,6 +20,7 @@ export const Button: React.FC<ButtonProps> = ({
   onClick,
   href,
   type = 'button',
+  disabled = false,
 }) => {
   const baseStyles = 'inline-flex items-center justify-center font-semibold transition-all duration-300 rounded-lg';
   
@@ -34,7 +36,7 @@ export const Button: React.FC<ButtonProps> = ({
     lg: 'px-8 py-4',
   };
   
-  const combinedClassName = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`;
+  const combinedClassName = `${baseStyles} ${variants[variant]} ${sizes[size]} ${className} ${disabled ? 'opacity-50 cursor-not-allowed pointer-events-none' : ''}`;
   
   if (href) {
     return (
@@ -53,6 +55,7 @@ export const Button: React.FC<ButtonProps> = ({
     <motion.button
       type={type}
       onClick={onClick}
+      disabled={disabled}
       className={combinedClassName}
       whileHover={{ scale: 1.05 }}
       whileTap={{ scale: 0.95 }}

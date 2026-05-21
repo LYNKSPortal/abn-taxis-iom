@@ -8,6 +8,8 @@ import { Card } from '../ui/Card';
 import { Button } from '../ui/Button';
 
 export const Contact = () => {
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,9 +22,25 @@ export const Contact = () => {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setStatus('sending');
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus('success');
+        setFormData({ name: '', email: '', phone: '', service: '', pickupLocation: '', dropoffLocation: '', date: '', time: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -235,9 +253,19 @@ export const Contact = () => {
                 ></textarea>
               </div>
 
-              <Button type="submit" variant="primary" size="lg" className="w-full">
+              {status === 'success' && (
+                <div className="w-full text-center py-3 px-4 rounded-lg bg-green-500/20 border border-green-500/40 text-green-400 font-medium">
+                  ✓ Booking request sent! We&apos;ll be in touch shortly.
+                </div>
+              )}
+              {status === 'error' && (
+                <div className="w-full text-center py-3 px-4 rounded-lg bg-red-500/20 border border-red-500/40 text-red-400 font-medium">
+                  Something went wrong. Please try again or call us directly.
+                </div>
+              )}
+              <Button type="submit" variant="primary" size="lg" className="w-full" disabled={status === 'sending'}>
                 <Send className="w-5 h-5 mr-2" />
-                Submit Booking Request
+                {status === 'sending' ? 'Sending...' : 'Submit Booking Request'}
               </Button>
             </form>
           </Card>
