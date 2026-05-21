@@ -66,6 +66,68 @@ const jsonLd = {
       "sameAs": ["https://www.abntaxis.com"],
     },
     {
+      "@type": "FAQPage",
+      "@id": "https://www.abntaxis.com/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I book a taxi or airport transfer in the Isle of Man?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You can book through the contact form on our website, call us directly at +44 7624 354427, or email bookings@abntaxis.com. We recommend booking at least 24 hours in advance, though we can accommodate last-minute requests subject to availability.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Do you cover the whole Isle of Man?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — ABN Taxis provides taxi and transfer coverage across the entire Isle of Man, including Douglas, Ramsey, Peel, Castletown, Port Erin, Port St Mary, Onchan and all areas in between.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer airport transfers to and from Ronaldsway Airport?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we specialise in airport transfers to and from Isle of Man Airport (Ronaldsway). We monitor all flight arrivals in real-time and adjust pickup times if your flight is delayed or arrives early at no extra charge.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Are you available 24 hours a day, 7 days a week?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, ABN Taxis is available 24/7, 365 days a year across the Isle of Man. Early morning airport runs, late night pickups — we are always available.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Are you licenced and insured?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we are fully licenced, insured, and have over 10 years of professional driving experience. Your safety and comfort are our top priorities on every journey.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "What payment methods do you accept?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We accept cash, all major credit and debit cards, and bank transfers. Business clients can also set up monthly invoicing arrangements.",
+          },
+        },
+        {
+          "@type": "Question",
+          "name": "Do you offer corporate or business taxi accounts in the Isle of Man?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, we offer corporate accounts with monthly billing for businesses on the Isle of Man. Contact us at bookings@abntaxis.com to discuss your requirements.",
+          },
+        },
+      ],
+    },
+    {
       "@type": "LocalBusiness",
       "@id": "https://www.abntaxis.com/#localbusiness",
       "name": "ABN Taxis",

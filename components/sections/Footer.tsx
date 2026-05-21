@@ -7,7 +7,7 @@ export const Footer = () => {
   return (
     <footer className="bg-black border-t border-gray-900">
       <div className="px-4 md:px-6 lg:px-8 py-12">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-8">
           <div>
             <h3 className="text-2xl font-bold mb-4">
               <span className="text-gradient-gold">ABN</span>
@@ -46,6 +46,19 @@ export const Footer = () => {
                   Contact
                 </a>
               </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-semibold mb-4">Service Areas</h4>
+            <ul className="space-y-2">
+              <li className="text-gray-400">Douglas</li>
+              <li className="text-gray-400">Ramsey</li>
+              <li className="text-gray-400">Peel</li>
+              <li className="text-gray-400">Castletown</li>
+              <li className="text-gray-400">Port Erin</li>
+              <li className="text-gray-400">Port St Mary</li>
+              <li className="text-gray-400">Onchan</li>
             </ul>
           </div>
 
