@@ -13,12 +13,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Exclusive Airport Transfer | Premium Chauffeur Service Isle of Man",
+  title: "ABN Taxi Service | Premium Chauffeur Service Isle of Man",
   description: "Luxury airport transfers and executive chauffeur services across the Isle of Man. Professional drivers, premium vehicles, 24/7 availability. Book your luxury transport today.",
   keywords: ["airport transfer", "Isle of Man", "chauffeur service", "luxury transport", "executive travel", "Douglas airport", "premium taxi"],
-  authors: [{ name: "Exclusive Airport Transfer" }],
+  authors: [{ name: "ABN Taxi Service" }],
   openGraph: {
-    title: "Exclusive Airport Transfer | Premium Chauffeur Service",
+    title: "ABN Taxi Service | Premium Chauffeur Service",
     description: "Experience luxury travel with Isle of Man's premier chauffeur service",
     type: "website",
   },
