@@ -37,13 +37,14 @@ export const Navbar = () => {
       <div className="px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <motion.div
-            className="flex items-center space-x-2"
+            className="flex flex-col"
             whileHover={{ scale: 1.05 }}
           >
             <div className="text-3xl md:text-4xl font-bold">
               <span className="text-gradient-gold">ABN</span>
               <span className="text-white ml-2">Taxis</span>
             </div>
+            <span className="text-[#D4AF37] text-xs font-semibold tracking-widest uppercase">Executive &amp; Reliable</span>
           </motion.div>
 
           <div className="hidden lg:flex items-center space-x-8">

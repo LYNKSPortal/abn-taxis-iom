@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { ArrowRight, Star, Shield, Clock } from 'lucide-react';
+import { ArrowRight, Star, Shield, Clock, CheckCircle } from 'lucide-react';
 import { Button } from '../ui/Button';
 
 export const Hero = () => {
@@ -38,18 +38,17 @@ export const Hero = () => {
               transition={{ delay: 0.2 }}
             >
               <Star className="w-4 h-4 text-[#D4AF37]" fill="#D4AF37" />
-              <span className="text-sm text-[#D4AF37] font-medium">Based in Douglas, Isle of Man</span>
+              <span className="text-sm text-[#D4AF37] font-medium">Executive Taxi Service — Isle of Man</span>
             </motion.div>
 
             <h1 className="text-3xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              <span className="text-white">Your Trusted Taxi Service</span>
+              <span className="text-white">Isle of Man's Executive</span>
               <br />
-              <span className="text-gradient-gold">Across the Isle of Man</span>
+              <span className="text-gradient-gold">Taxi Service</span>
             </h1>
 
             <p className="text-xl text-gray-300 mb-8 leading-relaxed max-w-3xl mx-auto">
-              Based in Douglas, ABN Taxis covers the whole island — from airport transfers and town runs
-              to business travel, nights out, and everything in between. Reliable, professional, and available 24/7.
+              ABN Taxis is the Isle of Man's premier <strong className="text-[#D4AF37]">executive taxi service</strong> — delivering reliable, punctual, and professional transport across the whole island, 24 hours a day, 7 days a week.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 mb-12 justify-center">
@@ -59,7 +58,7 @@ export const Hero = () => {
               </Button>
             </div>
 
-            <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
+            <div className="grid grid-cols-4 gap-6 max-w-3xl mx-auto">
               <motion.div
                 className="text-center"
                 whileHover={{ scale: 1.05 }}
@@ -89,6 +88,16 @@ export const Hero = () => {
                   <Star className="w-8 h-8 text-[#D4AF37]" fill="#D4AF37" />
                 </div>
                 <p className="text-sm text-gray-400">5-Star Rated</p>
+              </motion.div>
+              <motion.div
+                className="text-center"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.2 }}
+              >
+                <div className="flex justify-center mb-2">
+                  <CheckCircle className="w-8 h-8 text-[#D4AF37]" />
+                </div>
+                <p className="text-sm text-gray-400">Executive Class</p>
               </motion.div>
             </div>
           </motion.div>

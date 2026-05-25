@@ -14,7 +14,7 @@ export const Footer = () => {
               <span className="text-white ml-2">Taxi Service</span>
             </h3>
             <p className="text-gray-400">
-              Professional driver and airport transfer service based in Douglas, Isle of Man.
+              Executive taxi and reliable airport transfer service based in Douglas, Isle of Man.
             </p>
           </div>
 

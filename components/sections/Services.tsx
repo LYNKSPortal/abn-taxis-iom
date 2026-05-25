@@ -29,8 +29,8 @@ export const Services = () => {
     {
       icon: Briefcase,
       title: 'Business Travel',
-      description: 'Professional driver service for business travelers. Punctual and comfortable transportation for meetings and events.',
-      features: ['Punctual Service', 'Clean Vehicle', 'Professional'],
+      description: 'Executive driver service for business travelers. Reliable, punctual, and discreet — perfect for corporate meetings, events, and airport connections.',
+      features: ['Executive Class', 'Punctual & Reliable', 'Discreet Service'],
     },
   ];
 
@@ -47,7 +47,7 @@ export const Services = () => {
           <span className="text-gradient-gold">Our Services</span>
         </h2>
         <p className="text-xl text-gray-400 max-w-3xl mx-auto">
-          Professional transportation services across the Isle of Man
+          Executive, reliable transportation services across the Isle of Man
         </p>
       </motion.div>
 
@@ -112,8 +112,8 @@ export const Services = () => {
           <div className="flex justify-center mb-4">
             <Users className="w-12 h-12 text-[#D4AF37]" />
           </div>
-          <h4 className="text-xl font-bold text-white mb-2">Professional Service</h4>
-          <p className="text-gray-400">Experienced, licensed, and courteous driver</p>
+          <h4 className="text-xl font-bold text-white mb-2">Reliable Every Time</h4>
+          <p className="text-gray-400">Dependable executive service you can count on, every journey</p>
         </div>
       </motion.div>
     </Section>

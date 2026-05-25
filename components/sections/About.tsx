@@ -27,18 +27,13 @@ export const About = () => {
             <span className="text-gradient-gold">About Us</span>
           </h2>
           <p className="text-xl text-gray-300 mb-6 leading-relaxed">
-            ABN Taxi Service is a professional driver service based in Douglas, Isle of Man, 
-            providing reliable transportation since 2014.
+            ABN Taxi Service is the Isle of Man's trusted <strong className="text-[#D4AF37]">executive taxi service</strong>, based in Douglas and serving the whole island since 2014.
           </p>
           <p className="text-gray-400 mb-6 leading-relaxed">
-            I specialize in airport transfers, business travel, and island-wide transportation 
-            services. My commitment to punctuality, safety, and customer satisfaction has made 
-            me a trusted choice for travelers and businesses across the Isle of Man.
+            I specialise in executive airport transfers, corporate travel, and reliable island-wide transportation. My commitment to punctuality, discretion, and customer satisfaction has made me the go-to choice for business travellers and discerning clients across the Isle of Man.
           </p>
           <p className="text-gray-400 mb-8 leading-relaxed">
-            With a well-maintained vehicle and years of professional driving experience, 
-            I ensure every journey is comfortable, safe, and reliable. 
-            Whether you're traveling for business or pleasure, you can count on professional service.
+            With a premium, well-maintained vehicle and years of professional driving experience, I guarantee every journey is comfortable, smooth, and <strong className="text-white">reliably on time</strong> — every single time.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -91,10 +86,9 @@ export const About = () => {
                     <Award className="w-6 h-6 text-black" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Reliable Service</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Reliably On Time, Every Time</h3>
                     <p className="text-white md:text-gray-400">
-                      Well-maintained vehicle, regularly serviced to ensure a comfortable and 
-                      dependable journey every time.
+                      Premium, well-maintained vehicle regularly serviced for a consistently comfortable and dependable executive experience.
                     </p>
                   </div>
                 </div>
@@ -104,10 +98,9 @@ export const About = () => {
                     <Users className="w-6 h-6 text-black" />
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-2">Professional Service</h3>
+                    <h3 className="text-xl font-bold text-white mb-2">Executive Standard</h3>
                     <p className="text-white md:text-gray-400">
-                      Years of experience providing punctual, courteous service. I'm dedicated to 
-                      making every journey smooth and stress-free.
+                      Years of experience delivering punctual, discreet, executive-level service — making every journey smooth and stress-free.
                     </p>
                   </div>
                 </div>
